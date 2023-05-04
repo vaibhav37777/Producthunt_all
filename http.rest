@@ -1,5 +1,13 @@
-Get http://localhost:3002/
+Get http://localhost:3001/
 
 
 ###
-Post http://localhost:3002/
+POST http://localhost:3001/api/user
+content-type: application/json
+
+{
+    "name": "user 10",
+    "email":"vaibhav@gmail.com",
+    "password":"12349876"
+
+}
