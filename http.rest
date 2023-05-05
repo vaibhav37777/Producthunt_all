@@ -11,3 +11,14 @@ content-type: application/json
     "password":"12349876"
 
 }
+
+
+###
+POST http://localhost:3001/api/auth/login
+content-type: application/json
+
+{ 
+    "email":"vibhav111@gmail.com",
+    "password":"124567890"
+}
+

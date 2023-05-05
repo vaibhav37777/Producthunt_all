@@ -1,14 +1,11 @@
 const mongoose = require("mongoose");
+const User = require("../model/user");
 
-// const product = require("../model/product");
-const user = require("../model/user");
+exports.createUser = async (user) => {
+  await user.save();
+  console.log("User created successfully 1", user);
+};
 
-exports.createProduct = async (product) => {
-  //   const newUser = new product();
-  try {
-    const result = product.save();
-    return result;
-  } catch (error) {
-    console.log(error);
-  }
+exports.getUserByEmail = async (email) => {
+  return await User.findOne({ email: email });
 };
